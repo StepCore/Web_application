@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Web_practice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/card.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/catalog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/category_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/contacts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/style.css" afterDir="false" />
+    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="create gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -47,18 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.server.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;homework&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/PycharmProjects/Web_practice&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\Web_practice" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\Web_practice\css" />
       <recent name="C:\Users\User\PycharmProjects\Web_practice\homework" />
       <recent name="C:\Users\User\PycharmProjects\Web_practice" />
     </key>
@@ -79,6 +77,57 @@
       <option name="presentableId" value="Default" />
       <updated>1734355476906</updated>
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1735221967869</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735221967869</updated>
+    </task>
+    <task id="LOCAL-00002" summary="minifix">
+      <option name="closed" value="true" />
+      <created>1735222451890</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735222451890</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix server.py and all file.html (sidebar)">
+      <option name="closed" value="true" />
+      <created>1735233994525</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735233994525</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create gitignore">
+      <option name="closed" value="true" />
+      <created>1735234640537</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735234640537</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <MESSAGE value="minifix" />
+    <MESSAGE value="fix server.py and all file.html (sidebar)" />
+    <MESSAGE value="create gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="create gitignore" />
   </component>
 </project>

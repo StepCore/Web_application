@@ -3,14 +3,15 @@ import os
 from urllib.parse import unquote
 
 hostName = "localhost"  # Адрес для доступа по сети
-serverPort = 8080       # Порт для доступа по сети
+serverPort = 8080  # Порт для доступа по сети
 
 
 class MyServer(BaseHTTPRequestHandler):
     """Специальный класс, который отвечает за обработку входящих запросов от клиентов"""
+
     def do_GET(self):
         if self.path == "/":
-            self.serve_file("main.html")
+            self.serve_file("home.html")
         elif self.path == "/catalog":
             self.serve_file("catalog.html")
         elif self.path == "/category_1":
