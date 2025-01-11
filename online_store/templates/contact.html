@@ -10,10 +10,10 @@
    <!-- Боковая панель -->
     <div class="sidebar d-flex flex-column" style="height: 100vh;">
         <h2 class="text-center py-3">Меню</h2>
-        <a href="http://localhost:8080" class="active">Главная</a>
-        <a href="http://localhost:8080/category_1">Категории</a>
-        <a href="http://localhost:8080/catalog">Каталог</a>
-        <a href="http://localhost:8080/contact">Контакты</a>
+        <a href="http://127.0.0.1:8000/" class="active">Главная</a>
+        <a href="http://127.0.0.1:8000/category_1">Категории</a>
+        <a href="http://127.0.0.1:8000/catalog">Каталог</a>
+        <a href="http://127.0.0.1:8000/contact">Контакты</a>
         <div class="profile-menu mt-auto">
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Профиль</a>
             <a href="#">Выход</a>
@@ -28,10 +28,11 @@
       <div style="margin-top: 100px">
         <div class="card border-dark">
           <div class="card-header text-left">
-        <form>
+        <form method="post" action="">
+            {% csrf_token %}
           <div class="mb-3">
             <label for="exampleInputText" class="form-label">Имя</label>
-            <input type="text" class="form-control" id="exampleInputText" aria-describedby="addon-wrapping">
+            <input type="text" class="form-control" id="exampleInputText" name="name" aria-describedby="addon-wrapping" required>
           </div>
           <div class="mb-3">
             <label for="exampleInputText" class="form-label">Почта</label>
