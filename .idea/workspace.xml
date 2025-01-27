@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="create gitignore">
+    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="create contact_feedback and README.md">
+      <change afterPath="$PROJECT_DIR$/.env.sample" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +30,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -56,6 +62,8 @@
       <recent name="C:\Users\User\PycharmProjects\Web_practice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\Web_practice\static" />
+      <recent name="C:\Users\User\PycharmProjects\Web_practice\practice" />
       <recent name="C:\Users\User\PycharmProjects\Web_practice\css" />
       <recent name="C:\Users\User\PycharmProjects\Web_practice\homework" />
       <recent name="C:\Users\User\PycharmProjects\Web_practice" />
@@ -109,7 +117,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735234640537</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="create django project">
+      <option name="closed" value="true" />
+      <created>1736618057615</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736618057615</updated>
+    </task>
+    <task id="LOCAL-00006" summary="create contact_feedback and README.md">
+      <option name="closed" value="true" />
+      <created>1736621550900</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736621550900</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +152,8 @@
     <MESSAGE value="minifix" />
     <MESSAGE value="fix server.py and all file.html (sidebar)" />
     <MESSAGE value="create gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="create gitignore" />
+    <MESSAGE value="create django project" />
+    <MESSAGE value="create contact_feedback and README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="create contact_feedback and README.md" />
   </component>
 </project>
