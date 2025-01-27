@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="create contact_feedback and README.md">
-      <change afterPath="$PROJECT_DIR$/.env.sample" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="update settings.py project">
+      <change afterPath="$PROJECT_DIR$/online_store/management/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online_store/management/commands/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online_store/management/commands/add_products.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -133,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736621550900</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update settings.py project">
+      <option name="closed" value="true" />
+      <created>1737968364789</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737968364789</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +165,7 @@
     <MESSAGE value="create gitignore" />
     <MESSAGE value="create django project" />
     <MESSAGE value="create contact_feedback and README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="create contact_feedback and README.md" />
+    <MESSAGE value="update settings.py project" />
+    <option name="LAST_COMMIT_MESSAGE" value="update settings.py project" />
   </component>
 </project>

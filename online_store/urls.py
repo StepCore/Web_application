@@ -1,8 +1,7 @@
 from django.urls import path
 
 from online_store.apps import OnlineStoreConfig
-
-from online_store.views import home, contact_feedback, catalog, category_1
+from online_store.views import catalog, category_1, contact_feedback, home
 
 app_name = OnlineStoreConfig.name
 

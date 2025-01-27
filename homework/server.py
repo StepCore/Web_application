@@ -1,5 +1,5 @@
-from http.server import BaseHTTPRequestHandler, HTTPServer
 import os
+from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import unquote
 
 hostName = "localhost"  # Адрес для доступа по сети

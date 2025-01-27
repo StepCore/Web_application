@@ -1,5 +1,5 @@
-from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def home(request):
@@ -20,4 +20,4 @@ def contact_feedback(request):
         message = request.POST.get("message")
 
         return HttpResponse(f"Спасибо {name}! Сообщение получено.")
-    return render(request, 'contact.html')
+    return render(request, "contact.html")
