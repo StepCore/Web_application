@@ -1,13 +1,23 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+from online_store.models import Product
+
 
 def home(request):
-    return render(request, "home.html")
+    products = Product.objects.all()
+    context = {
+        "products": products,
+    }
+    return render(request, "home.html", context)
 
 
 def category_1(request):
-    return render(request, "category_1.html")
+    products = Product.objects.all()
+    context = {
+        "products": products,
+    }
+    return render(request, "category_1.html", context)
 
 
 def catalog(request):
