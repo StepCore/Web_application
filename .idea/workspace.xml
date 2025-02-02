@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="create new templates">
-      <change afterPath="$PROJECT_DIR$/media/images/iPhone-16-Pro-and-iPhone-16-Pro-Max-4-1_large.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online_store/templates/base.html" afterDir="false" />
+    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="update templates, controllers; create base templates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_store/templates/card.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_store/templates/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_store/templates/category_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/category_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_store/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_store/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_store/templates/sidebar.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/online_store/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738417801369</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update templates, controllers; create base templates">
+      <option name="closed" value="true" />
+      <created>1738489828238</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738489828238</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +192,7 @@
     <MESSAGE value="update settings.py project" />
     <MESSAGE value="create models, superuser, custom commands, update migrations" />
     <MESSAGE value="create new templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="create new templates" />
+    <MESSAGE value="update templates, controllers; create base templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="update templates, controllers; create base templates" />
   </component>
 </project>
