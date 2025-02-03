@@ -21,7 +21,11 @@ def category_1(request):
 
 
 def catalog(request):
-    return render(request, "catalog.html")
+    products = Product.objects.all()
+    context = {
+        "products": products,
+    }
+    return render(request, "catalog.html", context)
 
 
 def contact_feedback(request):

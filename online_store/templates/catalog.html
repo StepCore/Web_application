@@ -1,13 +1,15 @@
 {% extends 'base.html' %}
+{% load my_tags %}
 {% block title %}Главная{% endblock %}
 {% block main %}Каталог{% endblock %}
 {% block description %}{% endblock %}
 <div class="content">
   {% block content %}
+    {% for product in products %}
   <div class="row row-cols-1 row-cols-md-2 g-5">
     <div class="col">
       <div class="card" style="width: 600px; margin: auto;">
-    <img src="https://en.shiftdelete.net/wp-content/uploads/2024/06/galaxy-z-fold-6-will-not-come-with-the-expected-camera-feature-1.jpg" class="card-img-top" style="margin: auto;">
+    <img src="{{ product.image | media_filter }}" class="card-img-top" style="margin: auto;">
     <div class="card-body">
         <p class="card-text">Samsung S25 Ultra</p>
         <div class="btn-group" role="group" aria-label="Basic outlined example">
@@ -15,7 +17,7 @@
             <button type="button" class="btn btn-outline-secondary">Edit</button>
         </div>
     </div>
-      </div>
+</div>
     </div>
     <div class="col">
       <div class="card" style="width: 600px; margin: auto;">
@@ -55,4 +57,5 @@
     </div>
   </div>
 </div>
+{% endfor %}
 {% endblock %}
