@@ -1,0 +1,109 @@
+[
+{
+    "model": "online_store.product",
+    "pk": 2,
+    "fields": {
+        "name": "iphone 16 pro",
+        "description": "white color, 512 GB",
+        "image": "",
+        "category": "Smartphones",
+        "price": "115000",
+        "created_at": "2025-01-27",
+        "updated_at": "2025-01-27"
+    }
+},
+{
+    "model": "online_store.product",
+    "pk": 3,
+    "fields": {
+        "name": "Samsung S25 Ultra",
+        "description": "",
+        "image": "",
+        "category": "Smartphones",
+        "price": "130000",
+        "created_at": "2025-01-27",
+        "updated_at": "2025-01-27"
+    }
+},
+{
+    "model": "online_store.product",
+    "pk": 4,
+    "fields": {
+        "name": "Google Pixel 9 pro",
+        "description": "",
+        "image": "",
+        "category": "Smartphones",
+        "price": "110000",
+        "created_at": "2025-01-27",
+        "updated_at": "2025-01-27"
+    }
+},
+{
+    "model": "online_store.product",
+    "pk": 5,
+    "fields": {
+        "name": "Xiaomi 14",
+        "description": "",
+        "image": "",
+        "category": "Smartphones",
+        "price": "100000",
+        "created_at": "2025-01-27",
+        "updated_at": "2025-01-27"
+    }
+},
+{
+    "model": "online_store.product",
+    "pk": 6,
+    "fields": {
+        "name": "Sneakers",
+        "description": "",
+        "image": "",
+        "category": "Clothes",
+        "price": "5000",
+        "created_at": "2025-01-27",
+        "updated_at": "2025-01-27"
+    }
+},
+{
+    "model": "online_store.product",
+    "pk": 7,
+    "fields": {
+        "name": "T-shirt",
+        "description": "",
+        "image": "",
+        "category": "Clothes",
+        "price": "2000",
+        "created_at": "2025-01-27",
+        "updated_at": "2025-01-27"
+    }
+},
+{
+    "model": "online_store.product",
+    "pk": 8,
+    "fields": {
+        "name": "Trousers",
+        "description": "",
+        "image": "",
+        "category": "Clothes",
+        "price": "4000",
+        "created_at": "2025-01-27",
+        "updated_at": "2025-01-27"
+    }
+},
+{
+    "model": "online_store.category",
+    "pk": 2,
+    "fields": {
+        "name": "Smartphones",
+        "description": ""
+    }
+},
+{
+    "model": "online_store.category",
+    "pk": 3,
+    "fields": {
+        "name": "Clothes",
+        "description": ""
+    }
+}
+]
