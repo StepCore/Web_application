@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="test">
+    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="test2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/galaxy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/galaxy_I9506od.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/galaxy_XL7SM6S.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/iPhone.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/iPhone_FWjrxEb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/pixel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/pixel_KqRUSPZ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/xiaomi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/xiaomi_Yjz29rO.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_store/templates/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_store/templatetags/my_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templatetags/my_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738604840646</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="test2">
+      <option name="closed" value="true" />
+      <created>1738681939500</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738681939500</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,6 +216,7 @@
     <MESSAGE value="update templates, controllers; create base templates" />
     <MESSAGE value="update base.html, home.html, add bootstrap.bundle.min.js" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="test2" />
+    <option name="LAST_COMMIT_MESSAGE" value="test2" />
   </component>
 </project>
