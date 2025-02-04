@@ -5,57 +5,21 @@
 {% block description %}{% endblock %}
 <div class="content">
   {% block content %}
-    {% for product in products %}
   <div class="row row-cols-1 row-cols-md-2 g-5">
-    <div class="col">
-      <div class="card" style="width: 600px; margin: auto;">
-    <img src="{{ product.image | media_filter }}" class="card-img-top" style="margin: auto;">
-    <div class="card-body">
-        <p class="card-text">Samsung S25 Ultra</p>
-        <div class="btn-group" role="group" aria-label="Basic outlined example">
-            <button type="button" class="btn btn-outline-secondary">View</button>
-            <button type="button" class="btn btn-outline-secondary">Edit</button>
-        </div>
-    </div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 600px; margin: auto;">
-    <img src="https://www.ixbt.com/img/n1/news/2024/6/6/iPhone-16-Pro-and-iPhone-16-Pro-Max-4-1_large.jpg" class="card-img-top" style="margin: auto;">
-    <div class="card-body">
-        <p class="card-text">Iphone 16 Pro</p>
-        <div class="btn-group" role="group" aria-label="Basic outlined example">
-            <button type="button" class="btn btn-outline-secondary">View</button>
-            <button type="button" class="btn btn-outline-secondary">Edit</button>
-        </div>
-    </div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 600px; margin: auto;">
-    <img src="https://i.playground.ru/e/iTBWzt4fXwCkPPVU4Nyk0w.jpeg" class="card-img-top" style="margin: auto;">
-    <div class="card-body">
-        <p class="card-text">Google Pixel 9 Pro</p>
-        <div class="btn-group" role="group" aria-label="Basic outlined example">
-            <button type="button" class="btn btn-outline-secondary">View</button>
-            <button type="button" class="btn btn-outline-secondary">Edit</button>
-        </div>
-    </div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 600px; margin: auto;">
-    <img src="https://www.gry-online.pl/i/h/22/433954286.jpg" class="card-img-top" style="margin: auto; height: 370px;">
-    <div class="card-body">
-        <p class="card-text">Xiaomi 14</p>
-        <div class="btn-group" role="group" aria-label="Basic outlined example">
-            <button type="button" class="btn btn-outline-secondary">View</button>
-            <button type="button" class="btn btn-outline-secondary">Edit</button>
-        </div>
-    </div>
-</div>
-    </div>
+      {% for product in products|slice:"4:" %}
+      <div class="col">
+          <div class="card" style="width: 600px; margin: auto;">
+              <img src="{{ product.image | media_filter }}" class="card-img-top" style="margin: auto;">
+              <div class="card-body">
+                  <h4 class="my-0 font-weight-normal">{{ product.name }}</h4>
+                  <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-outline-secondary">Edit</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      {% endfor %}
   </div>
 </div>
-{% endfor %}
 {% endblock %}
