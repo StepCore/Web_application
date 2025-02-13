@@ -22,7 +22,10 @@ unicode-bidi: isolate;
 
 table, tr, td, th {border: 1px solid black;}
 
-
+body {
+            display: flex;
+            height: 100%;
+        }
         .sidebar {
             width: 250px;
             background-color: #151515;

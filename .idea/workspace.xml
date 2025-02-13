@@ -4,9 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="test2">
+    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="update urls.py">
+      <change afterPath="$PROJECT_DIR$/blog_app/templates/blog/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_app/templates/blog/create_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_app/templates/blog/edit_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_app/templates/blog/post_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_app/templates/blog/post_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_app/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online_store/templates/online_store/product_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/online_store/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/templates/card.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/online_store/card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/templates/card_catalog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/templates/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/online_store/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/templates/category_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/online_store/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/online_store/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/online_store/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/my_style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -62,11 +81,11 @@
       <recent name="C:\Users\User\PycharmProjects\Web_practice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\Web_practice\online_store\templates" />
+      <recent name="C:\Users\User\PycharmProjects\Web_practice\online_store\templatetags" />
+      <recent name="C:\Users\User\PycharmProjects\Web_practice\online_store\templates\online_store" />
       <recent name="C:\Users\User\PycharmProjects\Web_practice\static" />
       <recent name="C:\Users\User\PycharmProjects\Web_practice\practice" />
-      <recent name="C:\Users\User\PycharmProjects\Web_practice\css" />
-      <recent name="C:\Users\User\PycharmProjects\Web_practice\homework" />
-      <recent name="C:\Users\User\PycharmProjects\Web_practice" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -189,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738681939500</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update urls.py">
+      <option name="closed" value="true" />
+      <created>1738682888058</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1738682888058</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,6 +244,7 @@
     <MESSAGE value="update base.html, home.html, add bootstrap.bundle.min.js" />
     <MESSAGE value="test" />
     <MESSAGE value="test2" />
-    <option name="LAST_COMMIT_MESSAGE" value="test2" />
+    <MESSAGE value="update urls.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="update urls.py" />
   </component>
 </project>
