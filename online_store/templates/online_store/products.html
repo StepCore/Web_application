@@ -1,14 +1,13 @@
-{% extends 'base.html' %}
-{% block title %}Категория 1{% endblock %}
+{% extends 'online_store/base.html' %}
 {% block main %}Товары{% endblock %}
 {% block description %}Вы находитесь на странице для продажи товаров.{% endblock %}
 {% block content %}
         <div class="row">
             <div class="product-container">
             <!-- Карточки товаров -->
-                {% for product in products|slice:"1:4" %}
+                {% for product in products_list|slice:"1:4" %}
                     <div class="col-md-3">
-                        {% include 'card.html' with product=product %}
+                        {% include 'online_store/card.html' with product=product %}
                     </div>
                 {% endfor %}
             </div>
@@ -16,9 +15,9 @@
              <!-- Второй ряд карточек -->
         <div class="row mt-5">
             <div class="product-container">
-                {% for product in products|slice:"5:8" %}
+                {% for product in products_list|slice:"5:8" %}
                     <div class="col-md-3">
-                        {% include 'card.html' with product=product %}
+                        {% include 'online_store/card.html' with product=product %}
                     </div>
                 {% endfor %}
             </div>

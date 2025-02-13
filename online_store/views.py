@@ -1,37 +1,36 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-
+from django.views.generic import ListView, View
 from online_store.models import Product
 
 
-def home(request):
-    products = Product.objects.all()
-    context = {
-        "products": products,
-    }
-    return render(request, "home.html", context)
+class ProductListView(ListView):
+    model = Product
 
 
-def category_1(request):
-    products = Product.objects.all()
+class ContactFeedbackView(View):
+    def get(self, request):
+        # Отображаем форму
+        return render(request, "online_store/contact.html")
+
+    def post(self, request):
+        # Обработка отправки формы
+        name = request.POST.get("name")
+        message = request.POST.get("message")
+        return HttpResponse(f"Спасибо {name}! Сообщение получено.")
+
+
+def products(request):
+    products_list = Product.objects.all()
     context = {
-        "products": products,
+        "products_list": products_list,
     }
-    return render(request, "category_1.html", context)
+    return render(request, "online_store/products.html", context)
 
 
 def catalog(request):
-    products = Product.objects.all()
+    products_list = Product.objects.all()
     context = {
-        "products": products,
+        "products_list": products_list,
     }
-    return render(request, "catalog.html", context)
-
-
-def contact_feedback(request):
-    if request.method == "POST":
-        name = request.POST.get("name")
-        message = request.POST.get("message")
-
-        return HttpResponse(f"Спасибо {name}! Сообщение получено.")
-    return render(request, "contact.html")
+    return render(request, "online_store/catalog.html", context)

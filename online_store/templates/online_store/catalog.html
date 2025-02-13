@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'online_store/base.html' %}
 {% load my_tags %}
 {% block title %}Главная{% endblock %}
 {% block main %}Каталог{% endblock %}
@@ -6,7 +6,7 @@
 <div class="content">
   {% block content %}
   <div class="row row-cols-1 row-cols-md-2 g-5">
-      {% for product in products|slice:"4:" %}
+      {% for product in products_list|slice:"4:" %}
       <div class="col">
           <div class="card" style="width: 600px; margin: auto;">
               <img src="{{ product.image | media_filter }}" class="card-img-top" style="margin: auto;">
