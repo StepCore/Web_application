@@ -1,10 +1,27 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from django.views.generic import ListView, View
+from django.urls import reverse_lazy
+from django.views.generic import DetailView, ListView, UpdateView, View
+
 from online_store.models import Product
 
 
 class ProductListView(ListView):
+    model = Product
+
+
+class ProductCatalogListView(ListView):
+    model = Product
+    template_name = "online_store/products.html"
+
+
+class ProductUpdateView(UpdateView):
+    model = Product
+    fields = "__all__"
+    success_url = reverse_lazy("online_store:products")
+
+
+class ProductDetailView(DetailView):
     model = Product
 
 
@@ -18,19 +35,3 @@ class ContactFeedbackView(View):
         name = request.POST.get("name")
         message = request.POST.get("message")
         return HttpResponse(f"Спасибо {name}! Сообщение получено.")
-
-
-def products(request):
-    products_list = Product.objects.all()
-    context = {
-        "products_list": products_list,
-    }
-    return render(request, "online_store/products.html", context)
-
-
-def catalog(request):
-    products_list = Product.objects.all()
-    context = {
-        "products_list": products_list,
-    }
-    return render(request, "online_store/catalog.html", context)

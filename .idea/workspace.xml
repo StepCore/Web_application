@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="create new app blog_app; update settings.py, urls.py">
+    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="update menu.html, blog_app/base.html">
+      <change afterPath="$PROJECT_DIR$/online_store/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online_store/templates/online_store/product_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/my_styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_app/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/templates/blog/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/templates/online_store/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/online_store/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/templates/online_store/card.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/online_store/card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/templates/online_store/catalog.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/online_store/templates/online_store/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/online_store/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/templates/online_store/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/online_store/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/my_style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +223,31 @@
       <option name="project" value="LOCAL" />
       <updated>1739454683977</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update menu.html, online_store/base.html">
+      <option name="closed" value="true" />
+      <created>1739617403121</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1739617403121</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update menu.html, blog_app/base.html">
+      <option name="closed" value="true" />
+      <created>1739617452028</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1739617452028</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update menu.html, blog_app/base.html">
+      <option name="closed" value="true" />
+      <created>1739617535393</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1739617535393</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +278,8 @@
     <MESSAGE value="update urls.py" />
     <MESSAGE value="fix app online_store" />
     <MESSAGE value="create new app blog_app; update settings.py, urls.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="create new app blog_app; update settings.py, urls.py" />
+    <MESSAGE value="update menu.html, online_store/base.html" />
+    <MESSAGE value="update menu.html, blog_app/base.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="update menu.html, blog_app/base.html" />
   </component>
 </project>
