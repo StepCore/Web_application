@@ -63,3 +63,19 @@ class ProductForm(forms.ModelForm):
             self.add_error("name", "Используется запрещенное слово")
         if description and any(word in description.lower() for word in forbidden_words):
             self.add_error("description", "Используется запрещенное слово")
+
+    def clean_image(self):
+        image = self.cleaned_data.get("image")
+
+        if image:
+            # Проверка формата файла
+            allowed_formats = ["image/jpeg", "image/png"]
+            if image.content_type not in allowed_formats:
+                raise ValidationError("Допустимые форматы изображений: JPEG и PNG.")
+
+            # Проверка размера файла (5 МБ = 5 * 1024 * 1024 байт)
+            max_size = 5 * 1024 * 1024  # 5 МБ
+            if image.size > max_size:
+                raise ValidationError("Максимальный размер файла: 5 МБ.")
+
+        return image
