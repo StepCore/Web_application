@@ -1,8 +1,11 @@
+from django import forms
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import DetailView, ListView, UpdateView, View
+from django.views.generic import (CreateView, DetailView, ListView, UpdateView,
+                                  View)
 
+from online_store.forms import ProductForm
 from online_store.models import Product
 
 
@@ -13,6 +16,12 @@ class ProductListView(ListView):
 class ProductCatalogListView(ListView):
     model = Product
     template_name = "online_store/products.html"
+
+
+class ProductCreateView(CreateView):
+    model = Product
+    form_class = ProductForm
+    success_url = reverse_lazy("online_store:products")
 
 
 class ProductUpdateView(UpdateView):

@@ -11,6 +11,9 @@
     {% include 'online_store/menu.html' %}
     <!-- Основной контент -->
     <div class="content">
+        <div style="display: flex; justify-content: flex-end;">
+            <a href="{% url 'online_store:product_create' %}" class="btn btn-outline-dark">Добавить товар</a>
+        </div>
         <h1 class="text-center">{% block main %}Главная{% endblock %}</h1>
         <p class="text-center" style="height: 50px;">{% block description %}Здесь вы можете посмотреть полный список товаров{% endblock %}</p>
         {% block content %} {% endblock %}
