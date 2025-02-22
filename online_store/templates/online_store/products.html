@@ -1,0 +1,23 @@
+{% extends 'online_store/base.html' %}
+{% block main %}Каталог{% endblock %}
+{% block description %}Вы находитесь на странице для продажи товаров.{% endblock %}
+{% block content %}
+    <div class="container">
+        {% for product in object_list %}
+            <!-- Открываем новый ряд каждые 3 карточки -->
+            {% if forloop.counter0|divisibleby:3 %}
+                <div class="row mt-5">
+            {% endif %}
+
+            <!-- Карточка товара -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                {% include 'online_store/card.html' with product=product %}
+            </div>
+
+            <!-- Закрываем ряд каждые 3 карточки или в конце списка -->
+            {% if forloop.counter|divisibleby:3 or forloop.last %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}

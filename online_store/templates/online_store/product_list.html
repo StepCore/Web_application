@@ -1,0 +1,19 @@
+{% extends 'online_store/base.html' %}
+{% block content %}
+<div class="accordion" id="accordionExample">
+  {% for product in object_list %}
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ forloop.counter }}" aria-expanded="false" aria-controls="collapse{{ forloop.counter }}">
+        {{ product.name }}
+      </button>
+    </h2>
+    <div id="collapse{{ forloop.counter }}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>{{ product.price }}</strong> {{ product.description }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
