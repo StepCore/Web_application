@@ -1,9 +1,13 @@
 from django.urls import path
 
 from online_store.apps import OnlineStoreConfig
-from online_store.views import (ContactFeedbackView, ProductCatalogListView,
-                                ProductCreateView, ProductDetailView,
-                                ProductListView)
+from online_store.views import (
+    ContactFeedbackView,
+    ProductCatalogListView,
+    ProductCreateView,
+    ProductDetailView,
+    ProductListView,
+)
 
 app_name = OnlineStoreConfig.name
 
