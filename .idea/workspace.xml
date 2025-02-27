@@ -4,24 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="create image validation">
-      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/management/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/management/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/management/commands/csu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/templates/users/user_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="fix settings.py">
+      <change afterPath="$PROJECT_DIR$/media/blog_previews/1cb3e1b439faf9160ea6cf8c67b141a5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blog_previews/Metro__Exodus_Screenshot_2019.02.21_-_23.17.49.97.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blog_previews/Metro__Exodus_Screenshot_2019_kwjOaCf.02.21_-_23.17.49.97.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blog_previews/bd666f6a-723c-11ed-aaed-525400e5eb72.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/1149607329_937069187.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/45.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/6125186265.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/S28077380fb544af595d391431bcf4335c.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/fdg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/orig.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/shield_album_cover_shirt_proof.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_store/templates/online_store/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/online_store/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/433954286.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/galaxy-z-fold-6-will-not-come-with-the-expected-camera-feature-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/iPhone-16-Pro-and-iPhone-16-Pro-Max-4-1_large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/iTBWzt4fXwCkPPVU4Nyk0w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/templates/online_store/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/online_store/product_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online_store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,20 +62,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.main.executor": "Run",
-    "Python.server.executor": "Run",
-    "Python.tests.executor": "Run",
-    "Python.views.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "homework",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/User/PycharmProjects/Web_practice/users"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.server.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.views.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;homework&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/PycharmProjects/Web_practice/users&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\PycharmProjects\Web_practice\users" />
@@ -277,7 +281,31 @@
       <option name="project" value="LOCAL" />
       <updated>1740239516802</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="fix online_store page, views and urls">
+      <option name="closed" value="true" />
+      <created>1740515727115</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1740515727115</updated>
+    </task>
+    <task id="LOCAL-00024" summary="create users app, urls, views...">
+      <option name="closed" value="true" />
+      <created>1740515847867</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1740515847867</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fix settings.py">
+      <option name="closed" value="true" />
+      <created>1740518103335</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1740518103335</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -313,6 +341,9 @@
     <MESSAGE value="fix online_store and css" />
     <MESSAGE value="create form product, fix views.py and add urls" />
     <MESSAGE value="create image validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="create image validation" />
+    <MESSAGE value="fix online_store page, views and urls" />
+    <MESSAGE value="create users app, urls, views..." />
+    <MESSAGE value="fix settings.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix settings.py" />
   </component>
 </project>
