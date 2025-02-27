@@ -9,10 +9,12 @@
                 <div class="row mt-5">
             {% endif %}
 
-            <!-- Карточка товара -->
-            <div class="col-md-4 d-flex align-items-stretch">
-                {% include 'online_store/card.html' with product=product %}
-            </div>
+                    <!-- Карточка товара -->
+                    {% if product.is_published %}
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        {% include 'online_store/card.html' with product=product %}
+                    </div>
+                    {% endif %}
 
             <!-- Закрываем ряд каждые 3 карточки или в конце списка -->
             {% if forloop.counter|divisibleby:3 or forloop.last %}

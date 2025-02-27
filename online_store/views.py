@@ -1,10 +1,20 @@
 from django import forms
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.exceptions import PermissionDenied
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, DetailView, ListView, UpdateView, View
+from django.views.generic import (
+    CreateView,
+    DetailView,
+    ListView,
+    UpdateView,
+    View,
+    DeleteView,
+)
+from django.views.generic.edit import ModelFormMixin
 
-from online_store.forms import ProductForm
+from online_store.forms import ProductForm, ProductModeratorForm
 from online_store.models import Product
 
 
@@ -17,20 +27,28 @@ class ProductCatalogListView(ListView):
     template_name = "online_store/products.html"
 
 
-class ProductCreateView(CreateView):
+class ProductCreateView(LoginRequiredMixin, CreateView):
     model = Product
     form_class = ProductForm
     success_url = reverse_lazy("online_store:products")
 
-
-class ProductUpdateView(UpdateView):
-    model = Product
-    fields = "__all__"
-    success_url = reverse_lazy("online_store:products")
+    def form_valid(self, form):
+        product = form.save()
+        user = self.request.user
+        product.owner = user
+        product.save()
+        return super().form_valid(form)
 
 
 class ProductDetailView(DetailView):
     model = Product
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        user = self.request.user
+        context["can_delete"] = user.has_perm("online_store.delete_product")
+        context["can_change"] = user.has_perm("online_store.change_product")
+        return context
 
 
 class ContactFeedbackView(View):
@@ -43,3 +61,23 @@ class ContactFeedbackView(View):
         name = request.POST.get("name")
         message = request.POST.get("message")
         return HttpResponse(f"Спасибо {name}! Сообщение получено.")
+
+
+class ProductDeleteView(DeleteView):
+    model = Product
+    success_url = reverse_lazy(
+        "online_store:products"
+    )  # Переадресация на список постов после удаления
+    template_name = "online_store/product_list.html"
+
+
+class ProductUpdateView(UpdateView):
+    model = Product
+    form_class = ProductForm
+    template_name = "online_store/product_edit.html"
+
+    def get_success_url(self):
+        # Переадресация на страницу деталей после успешного редактирования
+        return reverse_lazy(
+            "online_store:product_detail", kwargs={"pk": self.object.pk}
+        )

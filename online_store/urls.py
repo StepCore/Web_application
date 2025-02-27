@@ -7,6 +7,8 @@ from online_store.views import (
     ProductCreateView,
     ProductDetailView,
     ProductListView,
+    ProductDeleteView,
+    ProductUpdateView,
 )
 
 app_name = OnlineStoreConfig.name
@@ -17,4 +19,8 @@ urlpatterns = [
     path("products/", ProductCatalogListView.as_view(), name="products"),
     path("product/<int:pk>", ProductDetailView.as_view(), name="product_detail"),
     path("create/", ProductCreateView.as_view(), name="product_create"),
+    path(
+        "product/<int:pk>/delete/", ProductDeleteView.as_view(), name="product_delete"
+    ),
+    path("product/<int:pk>/edit/", ProductUpdateView.as_view(), name="product_edit"),
 ]
