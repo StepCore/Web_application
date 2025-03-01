@@ -4,28 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="fix settings.py">
-      <change afterPath="$PROJECT_DIR$/media/blog_previews/1cb3e1b439faf9160ea6cf8c67b141a5.jpg" afterDir="false" />
+    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="create user">
       <change afterPath="$PROJECT_DIR$/media/blog_previews/Metro__Exodus_Screenshot_2019.02.21_-_23.17.49.97.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/media/blog_previews/Metro__Exodus_Screenshot_2019_kwjOaCf.02.21_-_23.17.49.97.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/media/blog_previews/bd666f6a-723c-11ed-aaed-525400e5eb72.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/1149607329_937069187.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/45.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/6125186265.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/S28077380fb544af595d391431bcf4335c.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/fdg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/orig.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/shield_album_cover_shirt_proof.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/images/433954286.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/media/images/galaxy-z-fold-6-will-not-come-with-the-expected-camera-feature-1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/media/images/iPhone-16-Pro-and-iPhone-16-Pro-Max-4-1_large.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/media/images/iTBWzt4fXwCkPPVU4Nyk0w.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_store/templates/online_store/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/templates/online_store/product_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +59,12 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;homework&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/PycharmProjects/Web_practice/users&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/PycharmProjects/Web_practice/online_store/templates/online_store&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\Web_practice\online_store\templates\online_store" />
       <recent name="C:\Users\User\PycharmProjects\Web_practice\users" />
       <recent name="C:\Users\User\PycharmProjects\Web_practice" />
     </key>
@@ -305,7 +292,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740518103335</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="create product_edit.html, owner; update models.py, views.py and urls">
+      <option name="closed" value="true" />
+      <created>1740687747925</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1740687747925</updated>
+    </task>
+    <task id="LOCAL-00027" summary="create user">
+      <option name="closed" value="true" />
+      <created>1740687859194</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1740687859194</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -320,7 +323,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init commit" />
     <MESSAGE value="minifix" />
     <MESSAGE value="fix server.py and all file.html (sidebar)" />
     <MESSAGE value="create gitignore" />
@@ -344,6 +346,8 @@
     <MESSAGE value="fix online_store page, views and urls" />
     <MESSAGE value="create users app, urls, views..." />
     <MESSAGE value="fix settings.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix settings.py" />
+    <MESSAGE value="create product_edit.html, owner; update models.py, views.py and urls" />
+    <MESSAGE value="create user" />
+    <option name="LAST_COMMIT_MESSAGE" value="create user" />
   </component>
 </project>

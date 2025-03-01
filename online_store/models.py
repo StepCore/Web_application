@@ -8,7 +8,7 @@ class Product(models.Model):
     description = models.CharField(max_length=150, verbose_name="Описание товара")
     image = models.ImageField(upload_to="images/", verbose_name="Изображение товара")
     category = models.CharField(max_length=150, verbose_name="Категория товара")
-    price = models.CharField(max_length=150, verbose_name="Цена товара")
+    price = models.IntegerField(verbose_name="Цена товара")
     is_published = models.BooleanField(default=False, verbose_name="Опубликовано")
     created_at = models.DateField(
         auto_now_add=True, verbose_name="Дата создания товара"

@@ -4,14 +4,8 @@ from django.core.exceptions import PermissionDenied
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import (
-    CreateView,
-    DetailView,
-    ListView,
-    UpdateView,
-    View,
-    DeleteView,
-)
+from django.views.generic import (CreateView, DeleteView, DetailView, ListView,
+                                  UpdateView, View)
 from django.views.generic.edit import ModelFormMixin
 
 from online_store.forms import ProductForm, ProductModeratorForm
@@ -25,6 +19,22 @@ class ProductListView(ListView):
 class ProductCatalogListView(ListView):
     model = Product
     template_name = "online_store/products.html"
+    context_object_name = "object_list"
+
+    def get_queryset(self):
+        # Если пользователь имеет права модератора, показываем все товары
+        if self.request.user.has_perm("online_store.can_delete_product"):
+            return Product.objects.all()
+        # Иначе показываем только опубликованные товары
+        return Product.objects.filter(is_published=True)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # Передаем информацию о правах пользователя в шаблон
+        context["can_delete"] = self.request.user.has_perm(
+            "online_store.can_delete_product"
+        )
+        return context
 
 
 class ProductCreateView(LoginRequiredMixin, CreateView):
