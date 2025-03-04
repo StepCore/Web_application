@@ -1,0 +1,26 @@
+{% extends 'online_store/base.html' %}
+
+{% block main %}Категории товаров{% endblock %}
+{% block description %}Здесь вы можете посмотреть все доступные категории товаров{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        {% for category in object_list %}
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ category.name }}</h5>
+                        <p class="card-text">{{ category.description }}</p>
+                        <a href="{% url 'online_store:category_detail' %}" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <div class="col-12">
+                <p class="text-center">В этой категории пока нет товаров.</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -9,11 +9,15 @@ from django.views.generic import (CreateView, DeleteView, DetailView, ListView,
 from django.views.generic.edit import ModelFormMixin
 
 from online_store.forms import ProductForm, ProductModeratorForm
-from online_store.models import Product
+from online_store.models import Category, Product
+from online_store.services import get_product_from_cache
 
 
 class ProductListView(ListView):
     model = Product
+
+    def get_queryset(self):
+        return get_product_from_cache()
 
 
 class ProductCatalogListView(ListView):
@@ -91,3 +95,21 @@ class ProductUpdateView(UpdateView):
         return reverse_lazy(
             "online_store:product_detail", kwargs={"pk": self.object.pk}
         )
+
+
+class CategoryProductsView(ListView):
+    """Отображение списка всех категорий."""
+
+    model = Category
+    template_name = "online_store/category_list.html"
+
+
+class CategoryDetailView(ListView):
+    """Представление для отображения списка продуктов в указанной категории."""
+
+    model = Product
+    template_name = "online_store/category_detail.html"
+
+    def get_queryset(self):
+        """Возвращает список продуктов."""
+        return Category.objects.all()

@@ -39,5 +39,10 @@ class Product(models.Model):
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=150, verbose_name="Название категории")
+    name = models.CharField(
+        max_length=150, verbose_name="Название категории", unique=True
+    )
     description = models.CharField(max_length=150, verbose_name="Описание категории")
+
+    def __str__(self):
+        return f"{self.name}"
