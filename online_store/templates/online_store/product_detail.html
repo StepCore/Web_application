@@ -1,0 +1,77 @@
+{% extends 'online_store/base.html' %}
+{% load my_tags %}
+{% block main %}{{ product.name }}{% endblock %}
+{% block description %}Детали товара{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <!-- Картинка товара -->
+        <div class="col-md-6">
+            <img src="{{ product.image | media_filter }}" class="img-fluid rounded" alt="{{ product.name }}">
+        </div>
+        
+        <!-- Информация о товаре -->
+        <div class="col-md-6">
+            <h1>{{ object.name }}</h1>
+            <p class="text-muted">{{ object.category }}</p>
+            <p><strong>Цена: {{ object.price }} руб.</strong></p>
+            
+            <!-- Дополнительные детали товара -->
+            <div class="mt-4">
+                <h4>Характеристики:</h4>
+                <ul>
+                    <li>Категория: {{ object.category }}</li>
+                    <li>Описание: {{ object.description }}</li>
+                </ul>
+            </div>
+
+            <!-- Статус -->
+            <div class="post-status">
+                <span class="badge {% if product.is_published %}bg-success{% else %}bg-secondary{% endif %}">
+                    {% if product.is_published %}Опубликовано{% else %}Не опубликовано{% endif %}
+                </span>
+            </div>
+            <!-- Кнопка "Назад" -->
+            <a href="{% url 'online_store:products' %}" class="btn btn-secondary mt-3">Назад к товарам</a>
+
+            <!-- Кнопка "Удалить товар" с вызовом модального окна -->
+            {% if can_delete %}
+                <button type="button" class="btn btn-danger mt-3" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                    Удалить товар
+                </button>
+            {% endif %}
+
+            <!-- Кнопка редактирования -->
+            {% if can_change %}
+                <a href="{% url 'online_store:product_edit' product.pk %}" class="btn btn-warning mt-3">Редактировать</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно для подтверждения удаления -->
+{% if can_delete %}
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Подтверждение удаления</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    Вы уверены, что хотите удалить товар "{{ object.name }}"?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <!-- Форма для удаления товара -->
+                    <form method="post" action="{% url 'online_store:product_delete' product.pk %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger">Удалить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+{% endblock %}

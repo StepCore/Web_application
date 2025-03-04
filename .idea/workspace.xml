@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Web_practice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/card.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/catalog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/category_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/contacts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/style.css" afterDir="false" />
+    <list default="true" id="037a5fe6-7093-48fc-a219-0430eba5855b" name="Changes" comment="create user">
+      <change afterPath="$PROJECT_DIR$/media/blog_previews/Metro__Exodus_Screenshot_2019.02.21_-_23.17.49.97.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blog_previews/Metro__Exodus_Screenshot_2019_kwjOaCf.02.21_-_23.17.49.97.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/blog_previews/bd666f6a-723c-11ed-aaed-525400e5eb72.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/galaxy-z-fold-6-will-not-come-with-the-expected-camera-feature-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/iPhone-16-Pro-and-iPhone-16-Pro-Max-4-1_large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/iTBWzt4fXwCkPPVU4Nyk0w.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +27,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -47,20 +48,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.server.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.views.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;homework&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/PycharmProjects/Web_practice/online_store/templates/online_store&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\PycharmProjects\Web_practice\homework" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\Web_practice\online_store\templates\online_store" />
+      <recent name="C:\Users\User\PycharmProjects\Web_practice\users" />
       <recent name="C:\Users\User\PycharmProjects\Web_practice" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\Web_practice\users\templates" />
+      <recent name="C:\Users\User\PycharmProjects\Web_practice\users\templates\registration" />
+      <recent name="C:\Users\User\PycharmProjects\Web_practice\online_store\templates" />
+      <recent name="C:\Users\User\PycharmProjects\Web_practice\online_store\templatetags" />
+      <recent name="C:\Users\User\PycharmProjects\Web_practice\online_store\templates\online_store" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -79,6 +92,262 @@
       <option name="presentableId" value="Default" />
       <updated>1734355476906</updated>
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1735221967869</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735221967869</updated>
+    </task>
+    <task id="LOCAL-00002" summary="minifix">
+      <option name="closed" value="true" />
+      <created>1735222451890</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735222451890</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix server.py and all file.html (sidebar)">
+      <option name="closed" value="true" />
+      <created>1735233994525</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735233994525</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create gitignore">
+      <option name="closed" value="true" />
+      <created>1735234640537</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735234640537</updated>
+    </task>
+    <task id="LOCAL-00005" summary="create django project">
+      <option name="closed" value="true" />
+      <created>1736618057615</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736618057615</updated>
+    </task>
+    <task id="LOCAL-00006" summary="create contact_feedback and README.md">
+      <option name="closed" value="true" />
+      <created>1736621550900</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736621550900</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update settings.py project">
+      <option name="closed" value="true" />
+      <created>1737968364789</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737968364789</updated>
+    </task>
+    <task id="LOCAL-00008" summary="create models, superuser, custom commands, update migrations">
+      <option name="closed" value="true" />
+      <created>1737979307264</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737979307264</updated>
+    </task>
+    <task id="LOCAL-00009" summary="create new templates">
+      <option name="closed" value="true" />
+      <created>1738417801369</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738417801369</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update templates, controllers; create base templates">
+      <option name="closed" value="true" />
+      <created>1738489828238</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738489828238</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update base.html, home.html, add bootstrap.bundle.min.js">
+      <option name="closed" value="true" />
+      <created>1738500562828</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738500562828</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test">
+      <option name="closed" value="true" />
+      <created>1738604840646</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738604840646</updated>
+    </task>
+    <task id="LOCAL-00013" summary="test2">
+      <option name="closed" value="true" />
+      <created>1738681939500</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738681939500</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update urls.py">
+      <option name="closed" value="true" />
+      <created>1738682888058</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1738682888058</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix app online_store">
+      <option name="closed" value="true" />
+      <created>1739454505504</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1739454505504</updated>
+    </task>
+    <task id="LOCAL-00016" summary="create new app blog_app; update settings.py, urls.py">
+      <option name="closed" value="true" />
+      <created>1739454683977</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1739454683977</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update menu.html, online_store/base.html">
+      <option name="closed" value="true" />
+      <created>1739617403121</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1739617403121</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update menu.html, blog_app/base.html">
+      <option name="closed" value="true" />
+      <created>1739617452028</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1739617452028</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update menu.html, blog_app/base.html">
+      <option name="closed" value="true" />
+      <created>1739617535393</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1739617535393</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix online_store and css">
+      <option name="closed" value="true" />
+      <created>1739989233932</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1739989233932</updated>
+    </task>
+    <task id="LOCAL-00021" summary="create form product, fix views.py and add urls">
+      <option name="closed" value="true" />
+      <created>1740238618988</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1740238618988</updated>
+    </task>
+    <task id="LOCAL-00022" summary="create image validation">
+      <option name="closed" value="true" />
+      <created>1740239516802</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1740239516802</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix online_store page, views and urls">
+      <option name="closed" value="true" />
+      <created>1740515727115</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1740515727115</updated>
+    </task>
+    <task id="LOCAL-00024" summary="create users app, urls, views...">
+      <option name="closed" value="true" />
+      <created>1740515847867</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1740515847867</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fix settings.py">
+      <option name="closed" value="true" />
+      <created>1740518103335</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1740518103335</updated>
+    </task>
+    <task id="LOCAL-00026" summary="create product_edit.html, owner; update models.py, views.py and urls">
+      <option name="closed" value="true" />
+      <created>1740687747925</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1740687747925</updated>
+    </task>
+    <task id="LOCAL-00027" summary="create user">
+      <option name="closed" value="true" />
+      <created>1740687859194</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1740687859194</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="minifix" />
+    <MESSAGE value="fix server.py and all file.html (sidebar)" />
+    <MESSAGE value="create gitignore" />
+    <MESSAGE value="create django project" />
+    <MESSAGE value="create contact_feedback and README.md" />
+    <MESSAGE value="update settings.py project" />
+    <MESSAGE value="create models, superuser, custom commands, update migrations" />
+    <MESSAGE value="create new templates" />
+    <MESSAGE value="update templates, controllers; create base templates" />
+    <MESSAGE value="update base.html, home.html, add bootstrap.bundle.min.js" />
+    <MESSAGE value="test" />
+    <MESSAGE value="test2" />
+    <MESSAGE value="update urls.py" />
+    <MESSAGE value="fix app online_store" />
+    <MESSAGE value="create new app blog_app; update settings.py, urls.py" />
+    <MESSAGE value="update menu.html, online_store/base.html" />
+    <MESSAGE value="update menu.html, blog_app/base.html" />
+    <MESSAGE value="fix online_store and css" />
+    <MESSAGE value="create form product, fix views.py and add urls" />
+    <MESSAGE value="create image validation" />
+    <MESSAGE value="fix online_store page, views and urls" />
+    <MESSAGE value="create users app, urls, views..." />
+    <MESSAGE value="fix settings.py" />
+    <MESSAGE value="create product_edit.html, owner; update models.py, views.py and urls" />
+    <MESSAGE value="create user" />
+    <option name="LAST_COMMIT_MESSAGE" value="create user" />
   </component>
 </project>

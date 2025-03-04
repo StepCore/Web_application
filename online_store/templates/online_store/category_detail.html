@@ -1,0 +1,31 @@
+{% extends 'online_store/base.html' %}
+{% block main %}{% endblock %}
+{% block description %}{% endblock %}
+{% block content %}
+    <div class="container">
+        <h1 class="text-center mb-4">{{ category.name }}</h1>
+        <p class="text-center">{{ category.description }}</p>
+        {% for product in products %}
+            <!-- Открываем новый ряд каждые 3 карточки -->
+            {% if forloop.counter0|divisibleby:3 %}
+                <div class="row mt-5">
+            {% endif %}
+
+                    <!-- Карточка товара -->
+                    {% if product.is_published or can_delete %}
+                    <div class="col-md-4 d-flex align-items-stretch">
+                        {% include 'online_store/card.html' with product=product %}
+                    </div>
+                    {% endif %}
+
+            <!-- Закрываем ряд каждые 3 карточки или в конце списка -->
+            {% if forloop.counter|divisibleby:3 or forloop.last %}
+                </div>
+            {% endif %}
+        {% empty %}
+            <div class="col-12">
+                <p class="text-center">В этой категории пока нет товаров.</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

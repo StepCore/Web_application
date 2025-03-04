@@ -1,0 +1,21 @@
+{% load my_tags %}
+<div class="card" style="width: 18rem; margin: 10px; height: 450px; display: flex; flex-direction: column;">
+    <!-- Картинка товара -->
+    <img src="{{ product.image | media_filter }}" class="card-img-top" alt="{{ product.name }}" style="height: 200px; object-fit: cover; margin: auto; padding: 10px;">
+
+    <div class="card-body" style="flex: 1; display: flex; flex-direction: column; overflow: hidden;">
+        <!-- Название товара -->
+        <h5 class="card-title">{{ product.name }}</h5>
+
+        <!-- Описание товара -->
+        <div style="flex: 1; overflow-y: auto; margin-bottom: 10px;">
+            <p class="card-text">{{ product.description }}</p>
+        </div>
+
+        <!-- Цена товара -->
+        <p class="card-text"><strong>Цена: {{ product.price }} руб.</strong></p>
+
+        <!-- Кнопка для просмотра -->
+        <a href="{% url 'online_store:product_detail' product.id %}" class="btn btn-primary">Посмотреть</a>
+    </div>
+</div>
