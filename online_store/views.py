@@ -1,14 +1,17 @@
-from django import forms
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.core.exceptions import PermissionDenied
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy
-from django.views.generic import (CreateView, DeleteView, DetailView, ListView,
-                                  UpdateView, View)
-from django.views.generic.edit import ModelFormMixin
+from django.views.generic import (
+    CreateView,
+    DeleteView,
+    DetailView,
+    ListView,
+    UpdateView,
+    View,
+)
 
-from online_store.forms import ProductForm, ProductModeratorForm
+from online_store.forms import ProductForm
 from online_store.models import Category, Product
 from online_store.services import get_product_from_cache
 
@@ -109,7 +112,20 @@ class CategoryDetailView(ListView):
 
     model = Product
     template_name = "online_store/category_detail.html"
+    context_object_name = "products"
 
     def get_queryset(self):
-        """Возвращает список продуктов."""
-        return Category.objects.all()
+        """Возвращает список продуктов в указанной категории."""
+        category_name = self.kwargs["category_name"]  # Получаем имя категории из URL
+        category = get_object_or_404(Category, name=category_name)  # Находим категорию
+        return Product.objects.filter(
+            category=category
+        )  # Фильтруем товары по категории
+
+    def get_context_data(self, **kwargs):
+        """Добавляем категорию в контекст шаблона."""
+        context = super().get_context_data(**kwargs)
+        context["category"] = get_object_or_404(
+            Category, name=self.kwargs["category_name"]
+        )
+        return context

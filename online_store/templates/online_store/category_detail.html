@@ -1,9 +1,11 @@
 {% extends 'online_store/base.html' %}
-{% block main %}{{ category.name }}{% endblock %}
-{% block description %}Вы находитесь на странице для продажи товаров.{% endblock %}
+{% block main %}{% endblock %}
+{% block description %}{% endblock %}
 {% block content %}
     <div class="container">
-        {% for product in object_list %}
+        <h1 class="text-center mb-4">{{ category.name }}</h1>
+        <p class="text-center">{{ category.description }}</p>
+        {% for product in products %}
             <!-- Открываем новый ряд каждые 3 карточки -->
             {% if forloop.counter0|divisibleby:3 %}
                 <div class="row mt-5">
@@ -20,6 +22,10 @@
             {% if forloop.counter|divisibleby:3 or forloop.last %}
                 </div>
             {% endif %}
+        {% empty %}
+            <div class="col-12">
+                <p class="text-center">В этой категории пока нет товаров.</p>
+            </div>
         {% endfor %}
     </div>
 {% endblock %}

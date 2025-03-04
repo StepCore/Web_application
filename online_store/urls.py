@@ -2,11 +2,17 @@ from django.urls import path
 from django.views.decorators.cache import cache_page
 
 from online_store.apps import OnlineStoreConfig
-from online_store.views import (CategoryDetailView, CategoryProductsView,
-                                ContactFeedbackView, ProductCatalogListView,
-                                ProductCreateView, ProductDeleteView,
-                                ProductDetailView, ProductListView,
-                                ProductUpdateView)
+from online_store.views import (
+    CategoryDetailView,
+    CategoryProductsView,
+    ContactFeedbackView,
+    ProductCatalogListView,
+    ProductCreateView,
+    ProductDeleteView,
+    ProductDetailView,
+    ProductListView,
+    ProductUpdateView,
+)
 
 app_name = OnlineStoreConfig.name
 
@@ -26,6 +32,8 @@ urlpatterns = [
     path("product/<int:pk>/edit/", ProductUpdateView.as_view(), name="product_edit"),
     path("category/", CategoryProductsView.as_view(), name="category_products"),
     path(
-        "category/category_detail", CategoryDetailView.as_view(), name="category_detail"
+        "category/<str:category_name>",
+        CategoryDetailView.as_view(),
+        name="category_detail",
     ),
 ]

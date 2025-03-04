@@ -42,7 +42,7 @@ class ProductForm(forms.ModelForm):
 
     def clean_price(self):
         price = self.cleaned_data.get("price")
-        if not price.isdigit() or int(price) <= 0:
+        if int(price) <= 0:
             raise ValidationError(
                 "Пожалуйста укажите целое положительное число не равное 0"
             )

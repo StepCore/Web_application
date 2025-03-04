@@ -3,11 +3,27 @@ from django.db import models
 from users.models import User
 
 
+class Category(models.Model):
+    name = models.CharField(
+        max_length=150, verbose_name="Название категории", unique=True
+    )
+    description = models.CharField(max_length=150, verbose_name="Описание категории")
+
+    def __str__(self):
+        return f"{self.name}"
+
+
 class Product(models.Model):
     name = models.CharField(max_length=150, verbose_name="Название товара")
     description = models.CharField(max_length=150, verbose_name="Описание товара")
     image = models.ImageField(upload_to="images/", verbose_name="Изображение товара")
-    category = models.CharField(max_length=150, verbose_name="Категория товара")
+    category = models.ForeignKey(
+        Category,
+        max_length=150,
+        verbose_name="Категория товара",
+        on_delete=models.CASCADE,
+        related_name="products",
+    )
     price = models.IntegerField(verbose_name="Цена товара")
     is_published = models.BooleanField(default=False, verbose_name="Опубликовано")
     created_at = models.DateField(
@@ -36,13 +52,3 @@ class Product(models.Model):
             ("can_unpublish_product", "Can unpublish product"),
             ("can_delete_product", "Can delete product"),
         ]
-
-
-class Category(models.Model):
-    name = models.CharField(
-        max_length=150, verbose_name="Название категории", unique=True
-    )
-    description = models.CharField(max_length=150, verbose_name="Описание категории")
-
-    def __str__(self):
-        return f"{self.name}"
